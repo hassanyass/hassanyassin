@@ -5,7 +5,8 @@
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 var(--spacing-sm);
+    padding: 0 1.5rem;
+    /* Increased mobile padding */
 }
 
 .section-pad {
@@ -305,8 +306,19 @@ p {
         display: none;
     }
 
+    .nav-links {
+        gap: 1rem;
+        /* Smaller gap on mobile */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        /* Smaller links on mobile */
+    }
+
     .hero-section {
         padding-top: var(--spacing-lg);
+        /* Maintain space for absolute header */
         min-height: auto;
         padding-bottom: var(--spacing-xl);
     }
@@ -330,7 +342,7 @@ p {
     }
 
     .hero-text .hero-sub {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         font-weight: var(--fw-medium);
         color: var(--color-tech);
         margin-bottom: 1rem;
@@ -338,16 +350,19 @@ p {
     }
 
     .hero-text h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-        margin-bottom: var(--spacing-md);
+        font-size: 1.75rem;
+        /* Slightly smaller for better fit */
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
         max-width: 100%;
+        word-break: break-word;
+        /* Prevent overflow */
     }
 
     .hero-subtitle-wrapper {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--spacing-md);
+        gap: 1rem;
         margin-bottom: 0;
         width: 100%;
     }
@@ -355,17 +370,19 @@ p {
     .mobile-hero-cta {
         display: inline-block !important;
         width: 100%;
+        max-width: 320px;
+        /* Cap width */
         text-align: center;
-        padding: 1rem;
-        font-size: 1.1rem;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
         margin-bottom: 0;
     }
 
     .hero-social {
         width: 100%;
         justify-content: flex-start;
-        margin-top: var(--spacing-sm);
-        padding-top: var(--spacing-sm);
+        margin-top: 0.5rem;
+        padding-top: 1rem;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -373,12 +390,15 @@ p {
         height: auto;
         margin-top: var(--spacing-md);
         order: 10;
+        width: 100%;
     }
 
     .collage-frame {
         width: 100%;
-        max-width: 280px;
-        height: 320px;
+        max-width: 250px;
+        /* Reduced to fit better */
+        height: 280px;
+        /* Proportional reduction */
         transform: none !important;
         animation: none !important;
         border-radius: 12px;
@@ -386,6 +406,37 @@ p {
         background: transparent;
         border: none;
         margin: 0 auto;
+    }
+
+    /* Grid Stacking for Mobile */
+    .projects-grid-2col,
+    .impact-grid,
+    .vault-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Extra small screens fix */
+@media (max-width: 380px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        gap: 0.75rem;
     }
 }
 
