@@ -5,8 +5,7 @@
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 1.5rem;
-    /* Increased mobile padding */
+    padding: 0 var(--spacing-sm);
 }
 
 .section-pad {
@@ -47,48 +46,12 @@ p {
 
 /* Header */
 .main-header {
-    /* fixed so it never shifts into the hero when layouts change */
-    position: fixed;
-    inset: 0 0 auto 0;
-    /* top:0; left:0; right:0 */
-    height: 72px;
-    z-index: 30;
-    background: linear-gradient(to bottom, rgba(2, 37, 44, 0.55), rgba(2, 37, 44, 0.15));
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-}
-
-.main-header .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0 1.5rem;
-    /* ensure consistent horizontal padding */
-}
-
-/* Hamburger & Close Menu - Desktop State */
-.hamburger-menu,
-.close-menu {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--color-text);
-    cursor: pointer;
-    transition: transform var(--transition-fast);
-}
-
-.hamburger-menu:hover,
-.close-menu:hover {
-    color: var(--color-action);
-}
-
-.close-menu {
+    padding: var(--spacing-md) 0;
     position: absolute;
-    top: 25px;
-    right: 25px;
-    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .main-header nav {
@@ -155,7 +118,7 @@ p {
 }
 
 .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     margin-bottom: var(--spacing-md);
     text-shadow: 0 10px 30px rgba(2, 57, 74, 0.5);
 }
@@ -165,20 +128,9 @@ p {
     margin-bottom: var(--spacing-sm);
     display: inline-block;
     background: rgba(236, 64, 103, 0.1);
-    padding: 0.15rem 0.6rem;
-    /* tighter so label doesn't feel large */
+    padding: 0.25rem 0.75rem;
     border-radius: 1rem;
     border: 1px solid rgba(236, 64, 103, 0.2);
-    font-size: clamp(0.85rem, 0.9vw + 0.4rem, 1rem);
-    /* fluid but smaller */
-    letter-spacing: 0.07em;
-    line-height: 1;
-    white-space: nowrap;
-    max-width: 18ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 700;
-    /* Bold as requested */
 }
 
 .hero-subtitle-wrapper {
@@ -193,8 +145,6 @@ p {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     margin-bottom: 0;
     opacity: 0.9;
-    font-weight: 700;
-    /* Bold as requested */
 }
 
 .hero-social {
@@ -270,11 +220,10 @@ p {
 
 .collage-frame {
     position: relative;
-    /* fluid, caps at the original design width */
-    width: min(100%, 400px);
-    aspect-ratio: 4 / 5;
-    /* preserves intended proportions without fixed px height */
+    width: 400px;
+    height: 500px;
     transform: rotate(-8deg);
+    /* Tilted at ~80 degrees from vertical */
     border-radius: 20px;
     overflow: hidden;
     box-shadow:
@@ -283,13 +232,6 @@ p {
         0 0 0 16px rgba(236, 64, 103, 0.05);
     background: linear-gradient(135deg, rgba(27, 153, 139, 0.1), rgba(236, 64, 103, 0.1));
     animation: float 6s ease-in-out infinite;
-    margin: 0 auto;
-}
-
-.collage-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .collage-frame img {
@@ -363,19 +305,8 @@ p {
         display: none;
     }
 
-    .nav-links {
-        gap: 1rem;
-        /* Smaller gap on mobile */
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-        /* Smaller links on mobile */
-    }
-
     .hero-section {
         padding-top: var(--spacing-lg);
-        /* Maintain space for absolute header */
         min-height: auto;
         padding-bottom: var(--spacing-xl);
     }
@@ -396,14 +327,10 @@ p {
 
     .hero-text .eyebrow {
         margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-        /* ensure mobile remains readable but smaller */
-        padding: 0.125rem 0.5rem;
-        letter-spacing: 0.06em;
     }
 
     .hero-text .hero-sub {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         font-weight: var(--fw-medium);
         color: var(--color-tech);
         margin-bottom: 1rem;
@@ -411,22 +338,16 @@ p {
     }
 
     .hero-text h1 {
-        font-size: 1.75rem;
-        /* Slightly smaller for better fit */
-        line-height: 1.25;
-        margin-bottom: 1.5rem;
-        max-width: 48ch;
-        /* limit measure for better wrapping */
-        width: 100%;
-        word-break: break-word;
-        hyphens: auto;
-        /* Prevent overflow */
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-md);
+        max-width: 100%;
     }
 
     .hero-subtitle-wrapper {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: var(--spacing-md);
         margin-bottom: 0;
         width: 100%;
     }
@@ -434,19 +355,17 @@ p {
     .mobile-hero-cta {
         display: inline-block !important;
         width: 100%;
-        max-width: 320px;
-        /* Cap width */
         text-align: center;
-        padding: 0.875rem 1.5rem;
-        font-size: 1rem;
+        padding: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 0;
     }
 
     .hero-social {
         width: 100%;
         justify-content: flex-start;
-        margin-top: 0.5rem;
-        padding-top: 1rem;
+        margin-top: var(--spacing-sm);
+        padding-top: var(--spacing-sm);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -454,15 +373,12 @@ p {
         height: auto;
         margin-top: var(--spacing-md);
         order: 10;
-        width: 100%;
     }
 
     .collage-frame {
         width: 100%;
-        max-width: 250px;
-        /* Reduced to fit better */
-        height: 280px;
-        /* Proportional reduction */
+        max-width: 280px;
+        height: 320px;
         transform: none !important;
         animation: none !important;
         border-radius: 12px;
@@ -470,37 +386,6 @@ p {
         background: transparent;
         border: none;
         margin: 0 auto;
-    }
-
-    /* Grid Stacking for Mobile */
-    .projects-grid-2col,
-    .impact-grid,
-    .vault-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-/* Extra small screens fix */
-@media (max-width: 380px) {
-    .container {
-        padding: 0 1rem;
-    }
-
-    .hero-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .logo {
-        font-size: 1.25rem;
-    }
-
-    .nav-links {
-        gap: 0.75rem;
     }
 }
 
@@ -809,152 +694,24 @@ p {
         padding: var(--spacing-lg) 0;
     }
 
-    .hero-section {
-        padding-top: 140px;
-        /* Force significant space so "Name Level" drops down */
-        padding-bottom: var(--spacing-xl);
-        min-height: auto;
-    }
-
-    /* 1. Mobile Navigation - Off-Canvas Drawer */
-    .main-header {
-        background: rgba(2, 37, 44, 0.95);
-        /* Consistent background */
-        backdrop-filter: blur(10px);
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .main-header .container {
-        flex-direction: row;
-        /* Keep logo and hamburger inline */
-        justify-content: space-between;
-        width: 100%;
-        gap: 0;
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
 
     .main-header nav {
-        display: block;
-        /* Removed flex to allow normal flow */
-        width: 100%;
-    }
-
-    /* Off-Canvas Drawer Container */
-    .nav-drawer {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background-color: #02394a;
-        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-        display: flex;
         flex-direction: column;
-        padding: 80px 30px;
-        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        gap: var(--spacing-md);
     }
 
-    .nav-drawer.nav-open {
-        right: 0;
-    }
-
-    .close-menu {
-        display: block;
-    }
-
-    /* Links inside Drawer */
     .nav-links {
         flex-direction: column;
         width: 100%;
-        gap: 2rem;
-        text-align: left;
-        margin-top: 1rem;
     }
 
+    /* Ensure finger-friendly touch targets */
     .nav-links a {
-        font-size: 1.25rem;
-        font-weight: 500;
-        color: #fff;
-        padding: 0;
-        background: transparent;
-        border-radius: 0;
-        display: inline-block;
-        width: auto;
-    }
-
-    .nav-links a:hover {
-        color: var(--color-action);
-        transform: translateX(5px);
-    }
-
-    .nav-social {
-        border-left: none;
-        padding-left: 0;
-        margin-left: 0;
-        margin-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 1.5rem;
-        width: 100%;
-        justify-content: flex-start;
-        gap: 1.5rem;
-    }
-
-    .nav-social svg {
-        width: 24px;
-        height: 24px;
-        opacity: 0.8;
-    }
-
-    /* 2. Fluid Typography & Hero Adjustments */
-    .hero-content h1 {
-        font-size: clamp(2rem, 8vw, 2.5rem);
-        /* Explicit mobile clamp */
-        text-align: center;
-    }
-
-    .hero-text {
-        align-items: center;
-        /* Center align hero text on mobile */
-        text-align: center;
-    }
-
-    .hero-subtitle-wrapper {
-        justify-content: center;
-    }
-
-    /* 3. Collapse Grids */
-    .projects-grid-2col,
-    .content-grid-2col,
-    .skills-grid,
-    .impact-grid,
-    .impact-grid-magazine,
-    .grid-col-3,
-    .grid-col-2 {
-        grid-template-columns: 1fr !important;
-        /* Force single column */
-        gap: 2rem;
-    }
-
-    /* Project Detail Split Screen */
-    .content-grid-2col {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Slideshow & Touch Targets */
-    .slideshow-arrow {
-        min-width: 44px;
-        min-height: 44px;
-        padding: 12px;
-        font-size: 1.5rem;
-    }
-
-    .project-card-box:hover {
-        transform: none;
-        /* Disable hover float on touch */
+        padding: 0.5rem;
+        display: block;
     }
 }
 
@@ -1381,7 +1138,6 @@ p {
     /* Remove default margin */
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
