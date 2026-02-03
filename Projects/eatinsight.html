@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatInSight | Hassan Yassin</title>
+    <meta name="description" content="AI Nutrition Assistant via Telegram">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merr iweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">HY.</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#about">Impact</a></li>
+                <li><a href="../Hassan Yassin CV.pdf" class="btn-primary" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image -->
+        <section class="project-hero">
+            <div class="container">
+                <span class="project-eyebrow">Automation & AI</span>
+                <h1>EatInSight</h1>
+                <p class="project-subtitle">AI Nutrition Assistant</p>
+
+                <!-- HERO IMAGE -->
+                <img src="../Projects/EatInSight/e1.jpg" alt="EatInSight Bot"
+                    style="max-height: 500px; width: 100%; object-fit: contain; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.5); margin-top: var(--spacing-md);">
+
+                <!-- TECH STACK RIBBON -->
+                <div class="tech-ribbon" style="margin-top: var(--spacing-lg); justify-content: center;">
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">n8n</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Telegram API</span>
+                    <span class="tech-pill" style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">OpenAI
+                        Vision</span>
+                    <span class="tech-pill" style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Notion
+                        API</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievement Callout -->
+        <section class="section-pad">
+            <div class="container">
+                <div
+                    style="text-align: center; padding: var(--spacing-xl); background: linear-gradient(135deg, rgba(236, 64, 103, 0.2), rgba(27, 153, 139, 0.1)); border-radius: 16px; border: 2px solid #EC4067;">
+                    <div style="font-size: 4rem; font-weight: 700; color: #EC4067; line-height: 1;">🥈</div>
+                    <h2 style="font-size: 2.5rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs);">2nd
+                        Place Winner</h2>
+                    <p style="font-size: 1.5rem; opacity: 0.95;">Melaka AI Hackathon 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution Split -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="content-grid-2col">
+                    <div>
+                        <h2 class="section-title">The Problem</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            Maintaining a healthy diet requires tracking macro-nutrients, but manual logging is
+                            <strong>tedious and error-prone</strong>. People often forget to log meals or struggle to
+                            estimate portion sizes accurately.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="section-title">The Solution</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            <strong>EatInSight</strong> is a Telegram bot that serves as a frictionless bridge between
+                            your eating habits and health data. Simply send a picture of your meal, and the AI analyzes
+                            it to extract macros and logs them directly to your Notion Calendar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-lg);">
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">1.
+                            Send a Photo</h3>
+                        <p
+                            style="font-size: 1.1rem; line-height: 1.7; opacity: 0.85; margin-bottom: var(--spacing-md);">
+                            Take a picture of your meal and send it to the @Foodie_mvp_bot on Telegram.</p>
+
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">2.
+                            AI Analysis</h3>
+                        <p
+                            style="font-size: 1.1rem; line-height: 1.7; opacity: 0.85; margin-bottom: var(--spacing-md);">
+                            The bot uses OpenAI Vision to analyze the image and extract nutritional information (carbs,
+                            protein, fats, calories).</p>
+
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">3.
+                            Auto-Logging</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.7; opacity: 0.85;">n8n automation workflow adds the
+                            data to your Notion Calendar so you can track your eating habits over time.</p>
+                    </div>
+
+                    <!-- SECONDARY IMAGE -->
+                    <div>
+                        <img src="../Projects/EatInSight/e3.jpg" alt="Detection Demo"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4); margin-bottom: var(--spacing-md);">
+                        <img src="../Projects/EatInSight/e4.jpg" alt="App Interface"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Quote -->
+        <section class="section-pad">
+            <div class="container">
+                <div style="text-align: center; padding: var(--spacing-xl); max-width: 900px; margin: 0 auto;">
+                    <p style="font-size: 2rem; font-style: italic; line-height: 1.6; color: #1B998B;">
+                        "Your food, Your data, Your decision."
+                    </p>
+                    <p style="font-size: 1.2rem; margin-top: var(--spacing-md); opacity: 0.8;">
+                        This project was a turning point in my understanding of automation and n8n workflows,
+                        transforming what I initially dismissed as hype into a powerful tool for real-world impact.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Hassan Yassin. Built with empathy.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathToHire | Hassan Yassin</title>
+    <meta name="description" content="AI-Powered Mock Interview Platform">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">HY.</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#about">Impact</a></li>
+                <li><a href="../Hassan Yassin CV.pdf" class="btn-primary" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image -->
+        <section class="project-hero">
+            <div class="container">
+                <span class="project-eyebrow">EdTech & Career Development</span>
+                <h1>PathToHire</h1>
+                <p class="project-subtitle">AI-Powered Mock Interview Platform & Career Coach</p>
+
+                <!-- HERO IMAGE -->
+                <img src="../Projects/Path2hire/p1.jpg" alt="PathToHire Interview Simulation"
+                    style="max-height: 500px; width: 100%; object-fit: contain; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.5); margin-top: var(--spacing-md);">
+
+                <!-- TECH STACK RIBBON -->
+                <div class="tech-ribbon" style="margin-top: var(--spacing-lg); justify-content: center;">
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Python</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Flask</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">JavaScript</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">RapidAPI</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Generative AI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution Split -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="content-grid-2col">
+                    <div>
+                        <h2 class="section-title">The Problem</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            Countless talented candidates fail to land jobs not because they lack the technical skills,
+                            but because they <strong>lack interview practice</strong>.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            Generic interview prep is ineffective because it doesn't account for a candidate's specific
+                            seniority level, tech stack, or industry.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="section-title">The Solution</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            <strong>PathToHire</strong> is a personalized AI companion that democratizes high-quality
+                            interview coaching.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            Built during the <strong>SalamHack Hackathon</strong>, the platform ingests a user's CV and
+                            career goals to generate hyper-realistic, fully customized interview simulations with
+                            real-time feedback.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works with Secondary Image -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">The Backend Pipeline</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center;">
+                    <div>
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            Dynamic Ingestion</h3>
+                        <p
+                            style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85; margin-bottom: var(--spacing-md);">
+                            The backend parses the candidate's CV data to understand their exact profile, experience
+                            level, and technical stack.
+                        </p>
+
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            Generative Questioning</h3>
+                        <p
+                            style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85; margin-bottom: var(--spacing-md);">
+                            Using RapidAPI and Hugging Face LLM models, the system generates adaptive technical and
+                            behavioral questions tailored to the user's profile.
+                        </p>
+
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            Evaluation Engine</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">
+                            The AI evaluates the candidate's responses in real-time and delivers structured,
+                            constructive feedback on areas for improvement.
+                        </p>
+                    </div>
+
+                    <!-- SECONDARY IMAGES -->
+                    <div>
+                        <img src="../Projects/Path2hire/p2.jpg" alt="CV Analysis"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4); margin-bottom: var(--spacing-md);">
+                        <img src="../Projects/Path2hire/p3.jpg" alt="Feedback Loop"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Resilience Quote -->
+        <section class="section-pad">
+            <div class="container">
+                <div
+                    style="text-align: center; padding: var(--spacing-xl); background: rgba(27, 153, 139, 0.1); border-radius: 16px; border-left: 6px solid #1B998B;">
+                    <p
+                        style="font-size: 2.2rem; font-style: italic; line-height: 1.5; max-width: 900px; margin: 0 auto;">
+                        "We learned more from our countless failed experiments than we did from our successes."
+                    </p>
+                    <p style="font-size: 1.3rem; margin-top: var(--spacing-md); opacity: 0.9; font-weight: 500;">
+                        Engineering Resilience
+                    </p>
+                    <p style="font-size: 1.1rem; margin-top: var(--spacing-sm); opacity: 0.8;">
+                        During this hackathon, our team faced countless failed API integrations—from wrestling with
+                        RapidAPI endpoints to fine-tuning Hugging Face models and navigating PythonAnywhere deployment
+                        hurdles. These challenges resulted in a robust, functional backend architecture.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">Team & Recognition</h2>
+                <p
+                    style="font-size: 1.2rem; line-height: 1.8; opacity: 0.9; text-align: center; max-width: 800px; margin: var(--spacing-lg) auto 0;">
+                    Developed for the <strong>SalamHack Hackathon</strong>, this project was brought to life alongside
+                    my dedicated engineering partners, Fadul Osman and Mohamed Doma. This MVP is just the beginning of a
+                    larger vision to help job seekers succeed.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Hassan Yassin. Built with empathy.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
