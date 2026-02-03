@@ -12,8 +12,8 @@
     --color-shadow: rgba(0, 0, 0, 0.2);
 
     /* Typography */
-    --font-heading: 'Merriweather', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 
     --fw-regular: 400;
     --fw-medium: 500;
@@ -28,7 +28,7 @@
 
     --border-radius: 1rem;
     --container-width: 1200px;
-    
+
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
