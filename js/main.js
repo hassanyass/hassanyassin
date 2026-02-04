@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
     // Mobile Navigation Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -19,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-=======
->>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     console.log('Main JS loaded');
 
     // Smooth scroll for anchor links
