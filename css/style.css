@@ -21,7 +21,11 @@ h1 {
 }
 
 h2.section-title {
+<<<<<<< HEAD
     font-size: clamp(2rem, 4vw, 2.5rem);
+=======
+    font-size: 2.5rem;
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     margin-bottom: var(--spacing-lg);
     text-align: center;
     position: relative;
@@ -84,6 +88,7 @@ p {
     color: var(--color-action);
 }
 
+<<<<<<< HEAD
 /* Mobile Menu Button */
 .mobile-menu-btn {
     display: none;
@@ -117,6 +122,8 @@ p {
     transform: translateY(-7px) rotate(-45deg);
 }
 
+=======
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 /* Buttons */
 .btn-primary {
     background-color: var(--color-action);
@@ -151,10 +158,16 @@ p {
 }
 
 .hero-content h1 {
+<<<<<<< HEAD
     font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
     margin-bottom: var(--spacing-md);
     text-shadow: 0 10px 30px rgba(2, 57, 74, 0.5);
     line-height: 1.1;
+=======
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 10px 30px rgba(2, 57, 74, 0.5);
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 }
 
 /* Hero Content Layout */
@@ -265,10 +278,14 @@ p {
         0 0 0 8px rgba(27, 153, 139, 0.1),
         0 0 0 16px rgba(236, 64, 103, 0.05);
     background: linear-gradient(135deg, rgba(27, 153, 139, 0.1), rgba(236, 64, 103, 0.1));
+<<<<<<< HEAD
     background: linear-gradient(135deg, rgba(27, 153, 139, 0.1), rgba(236, 64, 103, 0.1));
     animation: float 6s ease-in-out infinite;
     max-width: 100%;
     /* Prevent overflow */
+=======
+    animation: float 6s ease-in-out infinite;
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 }
 
 .collage-frame img {
@@ -446,7 +463,11 @@ p {
 /* Projects Section */
 .projects-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+=======
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -581,7 +602,11 @@ p {
 /* Impact Section */
 .impact-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+=======
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -750,6 +775,7 @@ p {
         padding: 0.5rem;
         display: block;
     }
+<<<<<<< HEAD
 
     /* Mobile Menu Styles */
     .mobile-menu-btn {
@@ -824,6 +850,8 @@ p {
         width: 100%;
         margin-top: 1rem;
     }
+=======
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 }
 
 
@@ -1183,7 +1211,11 @@ p {
    ======================================== */
 .impact-grid-magazine {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+=======
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     gap: var(--spacing-lg);
     margin-top: var(--spacing-lg);
 }
@@ -1249,7 +1281,10 @@ p {
     /* Remove default margin */
     display: -webkit-box;
     -webkit-line-clamp: 3;
+<<<<<<< HEAD
     line-clamp: 3;
+=======
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1311,6 +1346,7 @@ p {
 
 .impact-gallery-grid img:hover {
     transform: scale(1.02);
+<<<<<<< HEAD
 }
 
 /* Contact Section */
@@ -1377,4 +1413,6 @@ p {
     .contact-item {
         justify-content: flex-start;
     }
+=======
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 }

@@ -7,13 +7,22 @@
     --color-tech: #1B998B;
 
     /* Semantic Colors */
+<<<<<<< HEAD
     --color-bg-transparent: rgba(2, 57, 74, 0.95);
+=======
+    --color-bg-transparent: rgba(2, 57, 74, 0.9);
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
     --color-card-bg: rgba(255, 255, 255, 0.05);
     --color-shadow: rgba(0, 0, 0, 0.2);
 
     /* Typography */
+<<<<<<< HEAD
     --font-heading: 'Merriweather', serif;
     --font-body: 'Inter', sans-serif;
+=======
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
 
     --fw-regular: 400;
     --fw-medium: 500;
@@ -28,8 +37,16 @@
 
     --border-radius: 1rem;
     --container-width: 1200px;
+<<<<<<< HEAD
     
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+=======
+
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+>>>>>>> 904a17a597351ba7c3c3433ddb5da6fd04bc8f7b
