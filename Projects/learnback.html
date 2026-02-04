@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnBack | Hassan Yassin</title>
+    <meta name="description" content="AI learning-by-teaching platform with adaptive feedback">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">HY.</a>
+                        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#about">Impact</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../hassan-yassin-cv.pdf" class="btn-primary" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image -->
+        <section class="project-hero">
+            <div class="container">
+                <span class="project-eyebrow">EdTech NLP</span>
+                <h1>LearnBack</h1>
+                <p class="project-subtitle">AI Learning-by-Teaching Platform</p>
+
+                <!-- HERO IMAGE -->
+                <img src="../Projects/learnback/Session.png" alt="LearnBack Session Interface"
+                    style="max-height: 500px; width: 100%; object-fit: contain; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.5); margin-top: var(--spacing-md);">
+
+                <!-- TECH STACK RIBBON - HIGH CONTRAST FIX -->
+                <div class="tech-ribbon" style="margin-top: var(--spacing-lg); justify-content: center;">
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Python</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Generative AI</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">NLP</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution Split -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="content-grid-2col">
+                    <div>
+                        <h2 class="section-title">The Problem</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            Modern self-directed learning relies heavily on passive revision methods such as reading
+                            slides, notes, or watching videos. These approaches often <strong>fail to reveal
+                                misunderstandings</strong>, give learners a <strong>false sense of mastery</strong>, and
+                            lack <strong>immediate, personalized feedback</strong>.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            LearnBack addresses this gap by turning revision into an interactive teaching exercise,
+                            where understanding is continuously tested and refined.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="section-title">The Solution</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            LearnBack is an AI-driven learning platform designed to improve conceptual understanding by
+                            <strong>reversing the traditional learning flow</strong>. Instead of passively consuming
+                            content, learners actively teach concepts back to the system, allowing the AI to evaluate
+                            understanding, detect misconceptions, and provide targeted feedback.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            The platform focuses on <strong>deep learning, not memorization</strong>, by encouraging
+                            explanation, reasoning, and reflection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works with Secondary Image -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center;">
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-action);">1.
+                            Concept Selection</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">The learner selects a topic or
+                            concept they want to revise.</p>
+
+                        <h3
+                            style="font-size: 1.5rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            2. Teach-Back Interaction</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">The learner explains the concept
+                            in their own words. The system treats the learner as the "teacher."</p>
+
+                        <h3
+                            style="font-size: 1.5rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            3. AI Analysis</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">NLP and generative AI analyze
+                            concept coverage, logical structure, accuracy, and detect misconceptions.</p>
+
+                        <h3
+                            style="font-size: 1.5rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--color-action);">
+                            4. Adaptive Feedback</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">The AI responds with clarifying
+                            questions, corrections, simplified explanations, and suggestions on what to revisit.</p>
+                    </div>
+
+                    <!-- SECONDARY IMAGE -->
+                    <div>
+                        <img src="../Projects/learnback/Session feedback.png" alt="AI Feedback Interface"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4);">
+                        <img src="../Projects/learnback/Light Mode.png" alt="Light Mode Interface"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4); margin-top: var(--spacing-md);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features & Vision -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div
+                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg); margin-top: var(--spacing-md);">
+                    <div
+                        style="background: rgba(27, 153, 139, 0.1); padding: var(--spacing-md); border-radius: 12px; border: 1px solid rgba(27, 153, 139, 0.3);">
+                        <h3 style="color: #1B998B; margin-bottom: var(--spacing-xs);">Learning-by-Teaching</h3>
+                        <p style="opacity: 0.8; line-height: 1.6;">AI-based misconception detection with adaptive
+                            feedback instead of static answers.</p>
+                    </div>
+                    <div
+                        style="background: rgba(27, 153, 139, 0.1); padding: var(--spacing-md); border-radius: 12px; border: 1px solid rgba(27, 153, 139, 0.3);">
+                        <h3 style="color: #1B998B; margin-bottom: var(--spacing-xs);">Conceptual Depth</h3>
+                        <p style="opacity: 0.8; line-height: 1.6;">Analyzes not just correctness but conceptual depth
+                            and understanding.</p>
+                    </div>
+                    <div
+                        style="background: rgba(27, 153, 139, 0.1); padding: var(--spacing-md); border-radius: 12px; border: 1px solid rgba(27, 153, 139, 0.3);">
+                        <h3 style="color: #1B998B; margin-bottom: var(--spacing-xs);">Self-Study Ready</h3>
+                        <p style="opacity: 0.8; line-height: 1.6;">Designed for self-study, exam revision, and concept
+                            mastery.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: var(--spacing-xl); text-align: center; padding: var(--spacing-xl); background: linear-gradient(135deg, rgba(2, 57, 74, 0.6), rgba(27, 153, 139, 0.3)); border-radius: 16px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">Project Vision</h2>
+                    <p style="font-size: 1.3rem; line-height: 1.8; opacity: 0.95; max-width: 800px; margin: 0 auto;">
+                        LearnBack aims to become a <strong>personal AI study partner</strong> that helps learners think
+                        clearly, explain confidently, and truly understand what they study—by making teaching the core
+                        learning activity.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Hassan Yassin. Built with empathy.</p>
+        </div>
+    </footer>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

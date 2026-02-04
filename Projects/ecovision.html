@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVision AI | Hassan Yassin</title>
+    <meta name="description" content="Intelligent Waste Sorting Ecosystem for Smart Cities">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">HY.</a>
+                        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#about">Impact</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../hassan-yassin-cv.pdf" class="btn-primary" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Image -->
+        <section class="project-hero">
+            <div class="container">
+                <span class="project-eyebrow">Computer Vision & Sustainability</span>
+                <h1>EcoVision AI</h1>
+                <p class="project-subtitle">Intelligent Waste Sorting Ecosystem for Smart Cities</p>
+
+                <!-- HERO IMAGE -->
+                <img src="../Projects/EcoVision/eco1.png" alt="EcoVision Dashboard"
+                    style="max-height: 500px; width: 100%; object-fit: contain; border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.5); margin-top: var(--spacing-md);">
+
+                <!-- TECH STACK RIBBON - HIGH CONTRAST -->
+                <div class="tech-ribbon" style="margin-top: var(--spacing-lg); justify-content: center;">
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Python</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">Flask</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">OpenCV</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">YOLOv8</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">MobileNetV2</span>
+                    <span class="tech-pill"
+                        style="background-color: #1B998B; color: #FFFFFF; font-weight: 600;">TensorFlow</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution Split -->
+        <section class="section-pad">
+            <div class="container">
+                <div class="content-grid-2col">
+                    <div>
+                        <h2 class="section-title">The Problem</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            Urban waste management is <strong>inefficient, expensive, and currently relies on human
+                                workers performing hazardous manual labor</strong> in unsanitary conditions.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            While computer vision has the potential to automate this, real-world waste facilities
+                            present <strong>complex challenges</strong>: overlapping items, poor lighting, and dirty
+                            materials that confuse standard AI models.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="section-title">The Solution</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            EcoVision AI is a <strong>fully integrated, web-based intelligent waste recognition
+                                system</strong>. It bridges the gap between complex computer vision models and practical
+                            environmental management.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-top: var(--spacing-sm);">
+                            Designed for deployment on energy-efficient edge hardware (like the NVIDIA Jetson Nano), it
+                            turns ordinary recycling bins into interactive <strong>"Smart Bins."</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works with Secondary Image -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">The ML Pipeline</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center;">
+                    <div>
+                        <p
+                            style="font-size: 1.15rem; line-height: 1.8; opacity: 0.9; margin-bottom: var(--spacing-md);">
+                            To ensure industrial-grade robustness, I architected a <strong>multi-stage ML
+                                pipeline</strong>:
+                        </p>
+
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-xs); color: var(--color-action);">
+                            Advanced Preprocessing</h3>
+                        <p
+                            style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85; margin-bottom: var(--spacing-md);">
+                            Utilizing <strong>Contrast Limited Adaptive Histogram Equalization (CLAHE)</strong> and
+                            <strong>Canny edge detection</strong> to force the model to focus on structural geometry
+                            rather than color or lighting artifacts.
+                        </p>
+
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-xs); color: var(--color-action);">
+                            Dual-Engine Architecture</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; opacity: 0.85;">
+                            <strong>1. MobileNetV2 engine</strong> focuses on precise validation of individual items to
+                            ensure high-purity recycling streams.<br>
+                            <strong>2. YOLOv8-based inventory mode</strong> identifies and tallies multiple overlapping
+                            waste items within complex scenes.
+                        </p>
+                    </div>
+
+                    <!-- SECONDARY IMAGE -->
+                    <div>
+                        <img src="../Projects/EcoVision/eco2.jpeg" alt="YOLOv8 Detection"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY METRICS - LARGE PINK CALLOUT -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title">Key Metrics</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-lg);">
+                    <div>
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <div style="font-size: 3rem; font-weight: 700; color: #EC4067; line-height: 1;">87.53%</div>
+                            <p style="font-size: 1.2rem; margin-top: var(--spacing-xs); opacity: 0.9;">
+                                <strong>Accuracy</strong> in classifying five major waste categories (Aluminium, Carton,
+                                Glass, Paper, Plastic) using MobileNetV2
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <div style="font-size: 3rem; font-weight: 700; color: #EC4067; line-height: 1;">93.00%</div>
+                            <p style="font-size: 1.2rem; margin-top: var(--spacing-xs); opacity: 0.9;">
+                                <strong>Precision</strong> reached on transparent Glass items, a notoriously difficult
+                                material for AI to classify
+                            </p>
+                        </div>
+
+                        <div>
+                            <div style="font-size: 3rem; font-weight: 700; color: #EC4067; line-height: 1;">0.9918</div>
+                            <p style="font-size: 1.2rem; margin-top: var(--spacing-xs); opacity: 0.9;">
+                                <strong>mAP@50</strong> achieved by the YOLOv8n multi-object detection model for
+                                high-throughput inventory tracking
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- METRICS IMAGE -->
+                    <div>
+                        <img src="../Projects/EcoVision/eco3.jpeg" alt="Performance Charts"
+                            style="width: 100%; border-radius: 12px; box-shadow: 0px 8px 24px rgba(0,0,0,0.4);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Interface & Impact -->
+        <section class="section-pad" style="background: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">User Interface & Future Impact</h2>
+
+                <div class="content-grid-2col" style="margin-top: var(--spacing-lg);">
+                    <div>
+                        <h3 style="font-size: 1.6rem; margin-bottom: var(--spacing-sm); color: #1B998B;">Responsive
+                            Flask GUI</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            The system features a Flask-based graphical user interface with a responsive dashboard and
+                            drag-and-drop functionality. This enables non-technical stakeholders to conduct real-time
+                            sorting and inventory tracking without writing a single line of code.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 1.6rem; margin-bottom: var(--spacing-sm); color: #1B998B;">Scalable Smart
+                            City Solution</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                            This technology lays the foundation for scalable, AI-powered waste-sorting ecosystems that
+                            improve recycling efficiency, protect human workers, and support the circular economy in
+                            smart cities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Hassan Yassin. Built with empathy.</p>
+        </div>
+    </footer>
+<script src="../js/main.js"></script>
+</body>
+
+</html>

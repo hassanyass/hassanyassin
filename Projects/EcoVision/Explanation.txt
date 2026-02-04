@@ -1,0 +1,42 @@
+# PROJECT PROFILE: ECOVISION AI
+**Subtitle:** Intelligent Waste Sorting Ecosystem for Smart Cities
+**Role:** AI/ML Engineer & Backend Developer
+**Vibe:** High-Tech, Sustainable, Impact-Driven
+
+## 1. THE PROBLEM (Human Impact)
+Urban waste management is inefficient, expensive, and currently relies on human workers performing hazardous manual labor in unsanitary conditions. While computer vision has the potential to automate this, real-world waste facilities present complex challenges: overlapping items, poor lighting, and dirty materials that confuse standard AI models.
+
+## 2. THE SOLUTION (The Empathetic Engineer's Approach)
+EcoVision AI is a fully integrated, web-based intelligent waste recognition system. It bridges the gap between complex computer vision models and practical environmental management. Designed for deployment on energy-efficient edge hardware (like the NVIDIA Jetson Nano), it turns ordinary recycling bins into interactive "Smart Bins."
+
+## 3. TECHNOLOGIES USED (Display as Tags)
+* Python
+* Flask (Backend)
+* OpenCV (Image Processing)
+* YOLOv8 (Real-time Object Detection)
+* MobileNetV2 (Transfer Learning)
+* TensorFlow
+
+## 4. HOW IT WORKS (The ML Pipeline)
+To ensure industrial-grade robustness, I architected a multi-stage ML pipeline:
+* **Advanced Preprocessing:** Utilizing Contrast Limited Adaptive Histogram Equalization (CLAHE) and Canny edge detection to force the model to focus on structural geometry rather than color or lighting artifacts.
+* **Dual-Engine Architecture:** 1. A MobileNetV2 engine focuses on precise validation of individual items to ensure high-purity recycling streams.
+  2. A YOLOv8-based inventory mode identifies and tallies multiple overlapping waste items within complex scenes.
+
+## 5. KEY METRICS (Highlight these in #EC4067 Pink)
+* **87.53% Accuracy:** Achieved in classifying five major waste categories (Aluminium, Carton, Glass, Paper, Plastic) using MobileNetV2.
+* **93.00% Precision:** Reached on transparent Glass items, a notoriously difficult material for AI to classify.
+* **0.9918 mAP@50:** Achieved by the YOLOv8n multi-object detection model for high-throughput inventory tracking.
+
+## 6. USER INTERFACE
+The system features a Flask-based graphical user interface (GUI) with a responsive dashboard and drag-and-drop functionality. This enables non-technical stakeholders to conduct real-time sorting and inventory tracking without writing a single line of code.
+
+## 7. FUTURE IMPACT
+This technology lays the foundation for scalable, AI-powered waste-sorting ecosystems that improve recycling efficiency, protect human workers, and support the circular economy in smart cities.
+
+---
+**[DEVELOPER/AI INSTRUCTIONS FOR LAYOUT]**
+* **Hero Section:** Use 'ecovision-1.jpg' (The Dashboard UI) as the main hero image.
+* **Split Layout:** Place "The Problem" and "The Solution" side-by-side. 
+* **Data Visualization:** Call out the "KEY METRICS" in large, bold typography using the primary accent color. 
+* **Image Gallery:** Embed 'ecovision-2.jpg' (YOLOv8 Detection) near the "How it Works" section, and 'ecovision-3.jpg' (Confusion Matrix/Charts) near the "Key Metrics" section.

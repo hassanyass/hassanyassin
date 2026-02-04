@@ -1,0 +1,39 @@
+# PROJECT PROFILE: HEART ATTACK PREDICTION
+**Subtitle:** Real-Time Cardiac Risk Assessment powered by Deep Learning
+**Role:** Data Scientist & AI Engineer
+**Vibe:** MedTech, Data Rigor, Accessible Healthcare
+
+## 1. THE PROBLEM (Human Impact)
+Cardiovascular disease is the leading cause of death globally, but many fatal incidents could be prevented with early detection. Unfortunately, advanced diagnostic tools are often inaccessible to the average person, and subtle warning signs in standard health metrics are easily missed by human analysis until it is too late.
+
+## 2. THE SOLUTION (The Empathetic Engineer's Approach)
+A lightweight, accessible early-warning system. I developed a web application that democratizes diagnostic insights. By inputting standard, easily attainable health metrics (like blood pressure, cholesterol, and age), users receive a real-time risk assessment powered by top-tier computational intelligence models, encouraging preventative care.
+
+## 3. TECHNOLOGIES USED (Display as Tags)
+* Python
+* Flask (Web Deployment)
+* Deep Neural Networks (DNN)
+* Genetic Algorithms (GA-ANN)
+* Fuzzy Inference Systems (FIS)
+* Scikit-Learn
+* Pandas & NumPy
+
+## 4. HOW IT WORKS (The Data Science Pipeline)
+Instead of blindly applying a single model, I engineered and benchmarked four distinct Computational Intelligence architectures to find the absolute best fit for medical data:
+* **Feature Engineering:** Cleaned and processed raw medical datasets to optimize predictive performance.
+* **Model Benchmarking:** Developed an Artificial Neural Network (ANN), a Deep Neural Network (DNN), a Hybrid Genetic Algorithm-ANN (GA-ANN), and a Fuzzy Inference System (FIS).
+* **Evaluation:** Conducted rigorous comparative analysis using Precision, Recall, and F1-score to minimize false negatives (which are fatal in medical diagnoses).
+* **Deployment:** Integrated the winning model into a responsive Flask backend for real-time user interaction.
+
+## 5. KEY METRICS (Highlight in #EC4067 Pink)
+* **89% Accuracy:** Achieved in predicting heart attack risk using the top-performing Deep Learning architecture.
+* **Zero-Latency Inference:** Deployed via Flask to provide instant risk assessment upon user input.
+
+## 6. ENGINEERING INSIGHT
+This project highlights the intersection of classical AI (Fuzzy Logic) and modern Deep Learning (DNNs). The use of Genetic Algorithms to optimize the Neural Network demonstrated how bio-inspired computing can solve complex medical classification problems.
+
+---
+**[DEVELOPER/AI INSTRUCTIONS FOR LAYOUT]**
+* **Hero Image:** Use 'heartattack-1.jpg' (The Flask Web App input screen).
+* **Secondary Image:** Use 'heartattack-2.jpg' (A data visualization chart comparing the performance metrics of the 4 models).
+* **Color Priority:** Use the `#CCFBFE` (Ice Cyan) for the Medical/Tech tags to evoke a clean, clinical, yet modern healthcare aesthetic.

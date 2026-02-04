@@ -1,0 +1,117 @@
+LearnBack – AI Learning-by-Teaching Platform
+
+Project Type: AI-assisted educational platform
+Status: Under active development
+Core Idea: Learning by teaching, powered by AI feedback
+
+Project Overview
+
+LearnBack is an AI-driven learning platform designed to improve conceptual understanding by reversing the traditional learning flow. Instead of passively consuming content, learners actively teach concepts back to the system, allowing the AI to evaluate understanding, detect misconceptions, and provide targeted feedback.
+
+The platform focuses on deep learning, not memorization, by encouraging explanation, reasoning, and reflection.
+
+Problem It Solves
+
+Modern self-directed learning relies heavily on passive revision methods such as reading slides, notes, or watching videos. These approaches often:
+
+Fail to reveal misunderstandings
+
+Give learners a false sense of mastery
+
+Lack immediate, personalized feedback
+
+LearnBack addresses this gap by turning revision into an interactive teaching exercise, where understanding is continuously tested and refined.
+
+How It Works
+
+Concept Selection
+
+The learner selects a topic or concept they want to revise.
+
+Teach-Back Interaction
+
+The learner explains the concept in their own words (text-based initially, with future support for voice).
+
+The system treats the learner as the “teacher.”
+
+AI Analysis
+
+NLP and generative AI analyze:
+
+Concept coverage
+
+Logical structure
+
+Accuracy and misconceptions
+
+Partial understanding and missing links are detected.
+
+Adaptive Feedback
+
+The AI responds with:
+
+Clarifying questions
+
+Corrections
+
+Simplified explanations
+
+Suggestions on what to revisit
+
+Learning Reinforcement
+
+Learners iterate by refining their explanation until conceptual clarity is achieved.
+
+Key Features
+
+Learning-by-Teaching Mechanism
+
+AI-based misconception detection
+
+Adaptive feedback instead of static answers
+
+Conceptual depth analysis (not just correctness)
+
+Designed for self-study and exam revision
+
+Target Users
+
+University students
+
+Self-learners in technical and theoretical subjects
+
+Learners preparing for exams, interviews, or concept-heavy courses
+
+Technical Stack (Current & Planned)
+
+Backend: Python (non-Flask architecture)
+
+AI / NLP: Generative AI models for explanation analysis
+
+Frontend: JavaScript (with planned interactive visualizations)
+
+Future Enhancements:
+
+3D or interactive concept visualization (Three.js)
+
+Voice-based teach-back
+
+Learning progress analytics dashboard
+
+Design & UX Philosophy
+
+Minimal, distraction-free interface
+
+Focus on dialogue and explanation rather than buttons and scores
+
+Visual hierarchy that emphasizes:
+
+User explanation
+
+AI feedback
+
+Concept refinement loop
+
+Project Vision
+
+LearnBack aims to become a personal AI study partner that helps learners think clearly, explain confidently, and truly understand what they study—by making teaching the core learning activity.

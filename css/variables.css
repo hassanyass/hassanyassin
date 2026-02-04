@@ -1,0 +1,35 @@
+:root {
+    /* Color Palette */
+    --color-bg: #02394a;
+    --color-text: #CCFBFE;
+    --color-accent-warm: #C3A995;
+    --color-action: #EC4067;
+    --color-tech: #1B998B;
+
+    /* Semantic Colors */
+    --color-bg-transparent: rgba(2, 57, 74, 0.95);
+    --color-card-bg: rgba(255, 255, 255, 0.05);
+    --color-shadow: rgba(0, 0, 0, 0.2);
+
+    /* Typography */
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Spacing & Layout */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    --border-radius: 1rem;
+    --container-width: 1200px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

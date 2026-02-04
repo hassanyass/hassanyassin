@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Yassin | Melaka AI Hackathon</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+
+    <header class="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">HY.</a>
+                        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#about" class="active">Impact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="hassan-yassin-cv.pdf" class="btn-primary" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <span class="project-eyebrow">Innovation</span>
+                <h1>Melaka AI Hackathon</h1>
+                <p class="project-subtitle">2nd Place Winner: Eat-In-Sight, an AI-powered dietary automation tool.</p>
+            </div>
+        </section>
+
+        <section class="section-pad">
+            <div class="container hero-content">
+                <img src="Community/melaka-hackathon-images/Main.jpg" alt="Melaka AI Hackathon" class="impact-detail-hero">
+
+                <div class="impact-metrics-container">
+                    <div class="metric-item">
+                        <strong>2nd Place</strong>
+                        <span>Award</span>
+                    </div>
+                    <div class="metric-item">
+                        <strong>October 2025</strong>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="project-narrative">
+                    <p>I was awarded Second Place at the Melaka AI Hackathon, a competitive, time-constrained innovation
+                        event focused on applying Artificial Intelligence to real-world problems. The award was achieved
+                        through the development of Eat-In-Sight, an AI-powered Telegram bot designed to promote
+                        healthier eating habits through intelligent automation and computer vision.</p>
+                    <p>Eat-In-Sight enables users to simply upload an image of their meal via Telegram. The system
+                        analyzes the image using AI-based image understanding techniques to identify food components and
+                        estimate nutritional values, including macronutrients such as carbohydrates, proteins, and fats.
+                        Based on this analysis, the bot generates a structured meal breakdown that is easy for users to
+                        understand and act upon.</p>
+                    <p>Beyond analysis, the solution focuses strongly on automation and long-term habit building. Each
+                        analyzed meal is automatically logged into a Notion calendar, allowing users to track their
+                        dietary patterns over time, review past meals, and reflect on their nutritional consistency. The
+                        automation pipeline was built using n8n, showcasing how AI systems can be seamlessly integrated
+                        into existing productivity tools to reduce friction and manual effort.</p>
+                    <p>This project demonstrated how computer vision, workflow automation, and user-centric AI design
+                        can work together to transform everyday health decisions into data-driven insights. It also
+                        highlighted the importance of designing AI systems that fit naturally into users’ daily routines
+                        rather than adding complexity.</p>
+                    <p>From a personal and professional perspective, this experience significantly reshaped my
+                        understanding of automation and applied AI. It reinforced the mindset of continuous learning,
+                        unlearning outdated assumptions, and adapting quickly to emerging technologies, especially under
+                        hackathon-level pressure. The project was inspired by Eng. Ahmed Abo Zaid and brought to life
+                        through strong teamwork and collaboration with my colleagues, emphasizing the value of rapid
+                        execution, clear communication, and shared problem-solving in high-impact AI development.</p>
+                </div>
+
+                <div class="impact-gallery-grid">
+                    <img src="Community/melaka-hackathon-images/e1.jpg" alt="Hackathon Project 1">
+                    <img src="Community/melaka-hackathon-images/e3.jpg" alt="Hackathon Project 2">
+                    <img src="Community/melaka-hackathon-images/e4.jpg" alt="Hackathon Project 3">
+                    <img src="Community/melaka-hackathon-images/e5.jpg" alt="Hackathon Project 4">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Hassan Yassin. Built with empathy.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-bg.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
